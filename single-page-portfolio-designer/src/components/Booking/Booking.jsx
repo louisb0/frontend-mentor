@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { COLORS, QUERIES } from "../../constants";
+
 import LinkButton from "../LinkButton";
 import { BodyText, HeadingMedium } from "../TextTypes";
+
+import { COLORS, QUERIES } from "../../constants";
 
 function Booking() {
   return (
@@ -16,7 +18,9 @@ function Booking() {
         </Body>
       </TextWrapper>
       <ButtonWrapper>
-        <Button variant="secondary">Free Consultation</Button>
+        <Button variant="secondary" href="/consultation">
+          Free Consultation
+        </Button>
       </ButtonWrapper>
     </Wrapper>
   );

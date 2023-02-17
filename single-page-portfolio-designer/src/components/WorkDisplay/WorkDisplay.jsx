@@ -8,8 +8,8 @@ import { QUERIES } from "../../constants";
 
 function WorkDisplay() {
   return (
-    <Wrapper>
-      <HeadingSmall>My Work</HeadingSmall>
+    <Wrapper aria-labelledby="carousel-heading">
+      <HeadingSmall id="carousel-heading">My Work</HeadingSmall>
       <Carousel>
         <Carousel.Item src="/image-slide-1.jpg" />
         <Carousel.Item src="/image-slide-2.jpg" />
@@ -21,7 +21,7 @@ function WorkDisplay() {
   );
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   margin-top: 88px;
   text-align: center;
   --inner-spacing: 56px;

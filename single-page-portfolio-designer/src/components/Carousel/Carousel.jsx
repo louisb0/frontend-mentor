@@ -21,14 +21,18 @@ function Carousel({ children }) {
 
   return (
     <Wrapper>
-      <ItemsWrapper>
+      <ItemsWrapper role="listbox">
         {[...Array(3).keys()].map(
           (shift) => children[(visibleIndexStart + shift) % children.length]
         )}
       </ItemsWrapper>
       <ButtonsWrapper>
-        <ArrowButton variant="left" onClick={handleLeftShift} />
-        <ArrowButton variant="right" onClick={handleRightShift} />
+        <ArrowButton
+          variant="left"
+          onClick={handleLeftShift}
+          title="previous"
+        />
+        <ArrowButton variant="right" onClick={handleRightShift} title="next" />
       </ButtonsWrapper>
     </Wrapper>
   );
@@ -52,7 +56,7 @@ const Wrapper = styled.div`
   margin-top: var(--inner-spacing);
 `;
 
-const ItemsWrapper = styled.div`
+const ItemsWrapper = styled.ul`
   position: relative;
   width: var(--image-width);
   height: 360px;
@@ -72,7 +76,7 @@ const ItemsWrapper = styled.div`
   }
 `;
 
-const ItemWrapper = styled.div`
+const ItemWrapper = styled.li`
   position: absolute;
   /* border radius on image corner overflow */
   overflow: hidden;

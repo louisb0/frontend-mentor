@@ -9,6 +9,23 @@ function Carousel({ children }) {
   /* visibleIndexStart <-> (visibleIndexStart + 3) */
   const [visibleIndexStart, setVisibleIndexStart] = React.useState(0);
 
+  React.useEffect(() => {
+    const handleKeyDown = (ev) => {
+      if (ev.keyCode === 37) {
+        // arrow left
+        handleLeftShift();
+      } else if (ev.keyCode === 39) {
+        // arrow right
+        handleRightShift();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   const handleLeftShift = () => {
     setVisibleIndexStart(
       (previous) => (previous + (children.length - 1)) % children.length

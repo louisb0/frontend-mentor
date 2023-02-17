@@ -28,6 +28,7 @@ function App() {
 const Body = styled.div`
   width: 100%;
   background-color: ${COLORS.white};
+  overflow-x: hidden;
 `;
 
 /* --padding-x used for carousel */

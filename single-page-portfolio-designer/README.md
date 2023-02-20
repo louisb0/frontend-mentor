@@ -2,6 +2,8 @@
 ![site preview](https://media.giphy.com/media/ERJpPKxlKUvHHc2tVI/giphy.gif)<br>
 Site can be viewed [here](https://clever-fox-0d78ed.netlify.app/).
 
+NOTE: The circular 'about' image may not load on all browsers, due to the ``.webp`` format.
+
 ## About
 Challenge comes with a Figma file with desktop, tablet and mobile designs. I implemented these into a responsive site, which may be tested [here](https://clever-fox-0d78ed.netlify.app/).
 

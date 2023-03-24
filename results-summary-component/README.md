@@ -9,7 +9,7 @@ Challenge comes with a Figma file with desktop and mobile designs. I implemented
 ![Figma design](https://i.imgur.com/R2FQ4N0.png)
 For this project I felt as though an intermediate state was needed between desktop and mobile designs. This can be seen in the preview at the top of the page - aligning the text and score side by side before stacking them in a column. I also chose to ommit the 'Your Result' heading on smaller screens.
 
-Built with React + Vite and styled-components. [Original challenge.](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh) 
+Built with React + Vite and styled-components. [Original challenge.](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV) 
 
 
 ## Learnings + difficulties
